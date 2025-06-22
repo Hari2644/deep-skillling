@@ -1,0 +1,4 @@
+Hi, I'm Akhila. This repository is dedicated to posting and maintaining the weekly exercises assigned in 
+Cognizant's Deepskilling Manual. It contains my Java and Python code implementations along with output screenshots, showcasing my progress throughout the 
+
+learning journey. Exercises are structured week-wise for better clarity and easier tracking of my development.
