@@ -1,65 +1,41 @@
-
-
-1 row inserted.
-
-Elapsed: 00:00:00.016
-
-
-1 row inserted.
-
-Elapsed: 00:00:00.002
-
-
-1 row inserted.
-
-Elapsed: 00:00:00.001
-
-
-1 row inserted.
-
-Elapsed: 00:00:00.013
-
-
-1 row inserted.
-
-Elapsed: 00:00:00.001
-
-
-1 row inserted.
-
-Elapsed: 00:00:00.001
-
-
-1 row inserted.
-
-Elapsed: 00:00:00.012
-
-
-1 row inserted.
-
-Elapsed: 00:00:00.001
-
-
-1 row inserted.
-
-Elapsed: 00:00:00.001
-
-
-Commit complete.
-
-Elapsed: 00:00:00.001
-
+Scenario 1 :
 
 Procedure PROCESSMONTHLYINTEREST compiled
+Elapsed: 00:00:00.021
 
-Elapsed: 00:00:00.019
+"ACCOUNTID"	"ACCOUNTTYPE"	"BALANCE"	"LASTMODIFIED"
+1001	"Savings"	10000	"2025-06-27T04:28:52Z"
+1003	"Savings"	8000	"2025-06-27T04:28:52Z"
 
+
+
+
+Scenario 2 :
 
 Procedure UPDATEEMPLOYEEBONUS compiled
+Elapsed: 00:00:00.018
 
-Elapsed: 00:00:00.016
+"EMPLOYEEID"	"NAME"	"DEPARTMENT"	"SALARY"
+201	"Rohit Sharma"	"Finance"	60000
+203	"Suresh Rao"	"Finance"	35000
+
+
+
+
+Scenario 3 :
+
+"ACCOUNTID"	"BALANCE"
+1001	10000
+1003	8000
 
 
 Procedure TRANSFERFUNDS compiled
+Elapsed: 00:00:00.017
 
-Elapsed: 00:00:00.024
+"ACCOUNTID"	"BALANCE"
+1001	8000
+1003	10000
+
+Transfer failed: Insufficient balance.
+
+
