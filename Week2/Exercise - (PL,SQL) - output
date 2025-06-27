@@ -1,126 +1,35 @@
-
-  FOR c IN (SELECT * FROM CUSTOMERS) LOOP
-                          *
-ERROR at line 2:
-ORA-06550: line 2, column 27:
-PL/SQL: ORA-00942: table or view does not exist
-ORA-06550: line 2, column 13:
-PL/SQL: SQL Statement ignored
-ORA-06550: line 3, column 43:
-PLS-00364: loop index variable 'C' use is invalid
-ORA-06550: line 3, column 5:
-PL/SQL: Statement ignored
-ORA-06550: line 5, column 27:
-PL/SQL: ORA-00942: table or view does not exist
-ORA-06550: line 5, column 13:
-PL/SQL: SQL Statement ignored
-ORA-06550: line 6, column 39:
-PLS-00364: loop index variable 'L' use is invalid
-ORA-06550: line 6, column 5:
-PL/SQL: Statement ignored
-
-https://docs.oracle.com/error-help/db/ora-06550/
-
-
-More Details :
-https://docs.oracle.com/error-help/db/ora-06550/
-https://docs.oracle.com/error-help/db/pls-00364/
-Elapsed: 00:00:00.011
-
+Scenario 1 : output
 
 PL/SQL procedure successfully completed.
-
-Elapsed: 00:00:00.008
-
-ORA-00942: table or view "PUBLIC"."CUSTOMERS" does not exist
-
-https://docs.oracle.com/error-help/db/ora-00942/Error at Line: 4 Column: 0 
-
-
-
-Table CUSTOMERS created.
-
-Elapsed: 00:00:00.013
-
-
-Table LOANS created.
-
-Elapsed: 00:00:00.025
-
-
-1 row inserted.
-
-Elapsed: 00:00:00.024
-
-
-1 row inserted.
-
-Elapsed: 00:00:00.002
-
-
-1 row inserted.
-
-Elapsed: 00:00:00.001
-
-
-1 row inserted.
-
-Elapsed: 00:00:00.001
-
-
-1 row inserted.
-
-Elapsed: 00:00:00.002
-
-
-1 row inserted.
 
 Elapsed: 00:00:00.012
 
-
-1 row inserted.
-
-Elapsed: 00:00:00.001
+"LOANID"	"CUSTOMERID"	"LOANAMOUNT"	"INTERESTRATE"	"STARTDATE"	"ENDDATE"
+101	1	50000	8.5	"2025-03-19T03:54:14Z"	"2026-01-13T03:54:14Z"
 
 
-1 row inserted.
-
-Elapsed: 00:00:00.002
 
 
-1 row inserted.
+Scenario 2 : output
 
-Elapsed: 00:00:00.001
-
-
-1 row inserted.
-
-Elapsed: 00:00:00.002
-
-
-Commit complete.
-
-Elapsed: 00:00:00.001
-
-Interest rates updated for customers above 60.
-
-
-PL/SQL procedure successfully completed.
-
-Elapsed: 00:00:00.085
-
-VIP status updated for customers with balance > 10,000.
-
-
-PL/SQL procedure successfully completed.
-
-Elapsed: 00:00:00.013
-
-Reminder: Customer ID 1, your loan is due on 10-JUL-2025
-Reminder: Customer ID 3, your loan is due on 05-JUL-2025
-Reminder: Customer ID 4, your loan is due on 30-JUN-2025
+VIP status granted to Customer ID: 1
 
 
 PL/SQL procedure successfully completed.
 
 Elapsed: 00:00:00.014
+
+VIP status granted to Customer ID: 1
+
+
+
+
+Scenario 3 : output
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:00.017
+
+Reminder: Dear Test User, your loan (ID: 1001) is due on 02-Jul-2025.
+
+
